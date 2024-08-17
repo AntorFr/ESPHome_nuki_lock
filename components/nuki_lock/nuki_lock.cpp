@@ -1,5 +1,6 @@
 #include "esphome/core/log.h"
 #include "nuki_lock.h"
+#include "esphome/core/application.h"
 
 namespace esphome {
 namespace nuki_lock {
@@ -263,6 +264,7 @@ void NukiLockComponent::update() {
         }
     }
     else if (! this->unpair_) {
+        App.feed_wdt();
         bool paired = (this->nukiLock_.pairNuki() == Nuki::PairingResult::Success);
         if (paired) {
             ESP_LOGI(TAG, "Nuki paired");
