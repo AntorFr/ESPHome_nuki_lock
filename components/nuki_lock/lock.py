@@ -735,6 +735,7 @@ async def to_code(config):
         cg.add_library("Crc16", None)
         cg.add_library(
             name="NukiBleEsp32",
+            version=None,
             repository="https://github.com/I-Connect/NukiBleEsp32#940d809",
         )
 
