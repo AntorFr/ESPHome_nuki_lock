@@ -31,7 +31,8 @@
 #endif
 
 #define DEBUG_NUKI_CONNECT
-#define DDEBUG_NUKI_COMMUNICATION
+#define DEBUG_NUKI_COMMUNICATION
+#define DEBUG_NUKI_READABLE_DATA
 
 #include "NukiLock.h"
 #include "NukiConstants.h"
