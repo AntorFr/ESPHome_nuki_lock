@@ -30,6 +30,9 @@
 #include "esphome/components/select/select.h"
 #endif
 
+#define DEBUG_NUKI_CONNECT
+#define DDEBUG_NUKI_COMMUNICATION
+
 #include "NukiLock.h"
 #include "NukiConstants.h"
 #include "BleScanner.h"
